@@ -26,6 +26,7 @@
                .argv,
         glob = require('glob'),
         async = require('async'),
+        PDFDocument = require('pdfkit'),
         fs = require('fs');
     
     var fn = argv._[0],
@@ -54,9 +55,17 @@
                     if(err) {
                         console.error(err);
                     } else {
+                        var doc = new PDFDocument();
+                        doc.image(template, 0, 0, {
+                            width: 612,
+                            height: 792
+                        });
+                        
                         async.each(res.glob, function(v, cb) {
                             console.log(v + output);
+                            cb();
                         }, function(err) {
+                            doc.write('./output.pdf');
                             console.log(res);
                         });
                     }
