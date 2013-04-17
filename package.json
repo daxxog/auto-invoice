@@ -1,0 +1,28 @@
+{
+    "name"        : "auto-invoice",
+    "description" : "Script that makes invoices.",
+    "homepage"    : "https://github.com/daxxog/auto-invoice",
+    "main"        : "auto-invoice.js",
+    "version"     : "0.0.1",
+    "engines": { "node" : ">=0.4.0" },
+    "maintainers": [{
+        "name"  : "David Volm",
+        "email" : "david@volminator.com",
+        "web"   : "http://daxxog.com/"
+    }],
+    "repositories": [{
+        "type" : "git",
+        "url"  : "https://github.com/daxxog/auto-invoice.git"
+    }],
+    "dependencies": {
+        "async": "*",
+        "cash.js": "*",
+        "glob": "*",
+        "optimist": "*",
+        "pdfkit": "https://github.com/daxxog/pdfkit/tarball/fork1",
+        "string": "*"
+    },
+    "bin": {
+        "bcserver" : "./bin/auto-invoice"
+    }
+}
