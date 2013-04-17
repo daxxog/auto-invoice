@@ -23,6 +23,6 @@
         "string": "*"
     },
     "bin": {
-        "bcserver" : "./bin/auto-invoice"
+        "auto-invoice" : "./bin/auto-invoice"
     }
 }
