@@ -3,7 +3,7 @@
     "description" : "Script that makes invoices.",
     "homepage"    : "https://github.com/daxxog/auto-invoice",
     "main"        : "auto-invoice.js",
-    "version"     : "0.0.1",
+    "version"     : "0.0.2",
     "engines": { "node" : ">=0.4.0" },
     "maintainers": [{
         "name"  : "David Volm",
@@ -19,6 +19,7 @@
         "cash.js": "*",
         "glob": "*",
         "optimist": "*",
+        "mustache": "*",
         "pdfkit": "https://github.com/daxxog/pdfkit/tarball/fork1",
         "string": "*"
     },
